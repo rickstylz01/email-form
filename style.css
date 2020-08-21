@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Oswald&display=swap');
+
+main {
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+main img {
+  width: 100%;
+}
+
+main h1 {
+  margin: 12px 10px;
+  border-bottom: 1px solid #b3ddf2;
+  font-family: 'Lobster', cursive;
+}
+
+/* Contact form design */
+form {
+  padding-right: 6px;
+}
+
+form label {
+  display: block;
+  font-size: 18px;
+  font-family: 'Oswald', sans-serif;
+  color: #E9967A;
+}
+
+form input[type=text],
+[type=email] {
+  font-size: 16px;
+}
+
+form textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
+
+form button {
+  padding: 10px 16px;
+  font-family: 'Lobster', cursive;
+  background-color: #b3ddf2;
+  border-radius: 5px;
+  border: 0;
+  font-size: 16px;
+}
+
+form button:hover {
+  color: white;
+  background-color: black;
+}
+
+/* Image */
+.contact-image {
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
+/* Groups & Items (Mobile First) */
+.group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+/* Group & Items (Desktop) */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+
+  .group {
+    flex-direction: row;
+  }
+}
